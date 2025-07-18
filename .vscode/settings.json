@@ -62,5 +62,6 @@
         "dotenv",
         "embedder",
         "loguru",
+        "setuptools"
     ],
 }
