@@ -10,7 +10,9 @@ Network Architecture Requirements
 - The final output layer must use a Sigmoid activation function (for binary classification).
 
 """
+
 import numpy as np
+
 
 def sigmoid(z):
     """
@@ -77,16 +79,16 @@ def forward_propagation(X, W1, b1, W2, b2):
     """
     # 1. Compute the first layer linear transformation
     z1 = np.dot(X, W1) + b1
-    
+
     # 2. Compute the activation for the first layer
     a1 = sigmoid(z1)
-    
+
     # 3. Compute the second layer linear transformation
     z2 = np.dot(a1, W2) + b2
-    
+
     # 4. Compute the output layer activation:
     a2 = sigmoid(z2)
-    
+
     # 5. Return a1, a2, z1, z2
     return a1, a2, z1, z2
 
@@ -94,18 +96,18 @@ def forward_propagation(X, W1, b1, W2, b2):
 if __name__ == "__main__":
     # 1. Set the random seed for reproducibility.
     np.random.seed(42)
-    
+
     # 2. Define sample input data (2 samples, each with 2 features)
     X = np.array([[0.5, -0.2], [0.1, 0.4]])
-    
+
     # 3. Initialize parameters for a network with 2 input features, 3 hidden units, and 1 output unit.
     W1 = np.random.randn(2, 3) * 0.02
     b1 = np.zeros((1, 3))
     W2 = np.random.randn(3, 1) * 0.02
     b2 = np.zeros((1, 1))
-    
+
     # 4. Run forward propagation by calling forward_propagation(X, W1, b1, W2, b2)
     a1, a2, z1, z2 = forward_propagation(X, W1, b1, W2, b2)
-    
+
     # 5. Print the output (a2) of the forward pass.
     print(f"Output Probabilities = {a2}")
