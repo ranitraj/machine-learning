@@ -1,0 +1,29 @@
+/*
+  - Recommends the tools used for this project directly using the Extension-ID VSCode should
+    automatically prompt to install these upon initial setup.
+  - In case it doesn't, type: Cmd+Shift+P (Mac) or Ctrl+Shift+P (Windows/Linux) to go to the
+    Command-Palette and type 'Show recommended extensions'
+*/
+{
+  "recommendations": [
+    "ms-python.python",
+    "ms-python.black-formatter",
+    "ms-python.pylint",
+    "ms-python.flake8",
+    "ms-python.vscode-pylance",
+    "ms-python.isort",
+    "ms-python.mypy-type-checker",
+    "ms-toolsai.jupyter",
+    "ms-vscode-remote.vscode-remote-extensionpack",
+    "skellock.just",
+    "yzhang.markdown-all-in-one",
+    "bierner.markdown-mermaid",
+    "tamasfe.even-better-toml",
+    "redhat.vscode-yaml",
+    "samuelcolvin.jinjahtml",
+    "PKief.material-icon-theme",
+    "christian-kohler.path-intellisense",
+    "nickmillerdev.pytest-fixtures",
+    "streetsidesoftware.code-spell-checker",
+  ]
+}
